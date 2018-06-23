@@ -1,6 +1,5 @@
 package trace;
 
-import util.LibResolver;
 
 /**
  * 以下为测试代码，写 Fx界面时使用，之后移到 jar 里面去
