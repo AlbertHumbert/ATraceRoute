@@ -13,8 +13,8 @@ jni.h
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.cpp
 ATraceRoute.h
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceRoute.h
-cstdlib
--
+traceroute.h
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.h
 
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/jni.h
 stdio.h
@@ -25,4 +25,30 @@ jni_md.h
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/jni_md.h
 
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/jni_md.h
+
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+signal.h
+-
+errno.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+netinet/ip.h
+-
+netinet/ip_icmp.h
+-
+netinet/udp.h
+-
 

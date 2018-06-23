@@ -10,18 +10,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ATraceRoute$ATraceRoute.ic" NAME="ATraceRoute Coverage Results" MODIFIED="1529753052402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.linjiamin.trace.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ATraceRoute.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ATraceRoute.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/ATraceRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="91">
+              <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
               <folding>
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
                 <element signature="e#827#828#0" expanded="true" />
                 <element signature="e#873#874#0" expanded="true" />
                 <element signature="e#842#843#0" expanded="true" />
@@ -31,13 +37,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="com_linjiamin_trace_ATraceRoute.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com_linjiamin_trace_ATraceRoute.h">
+      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="37" />
+            <state relative-caret-position="230">
+              <caret line="1084" column="23" selection-start-line="1084" selection-start-column="23" selection-end-line="1084" selection-end-column="23" />
+              <folding>
+                <element signature="e#44970#44971#0" expanded="true" />
+                <element signature="e#45051#45052#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATraceRoute.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATraceRoute.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="TraceTest.java" pinned="false" current-in-tab="false">
@@ -119,8 +134,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="721" />
-    <option name="y" value="409" />
+    <option name="x" value="134" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="773" />
   </component>
@@ -161,11 +176,15 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/linjiamin/trace" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/com/linjiamin/trace" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -181,6 +200,18 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="ATraceRoute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.linjiamin.trace.ATraceRoute" />
+      <module name="ATraceRoute" />
+      <option name="PROGRAM_PARAMETERS" value="www.baidu.com 11" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.linjiamin.trace.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -222,6 +253,11 @@
       <properties />
       <listeners />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ATraceRoute" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -233,27 +269,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529741077992</updated>
-      <workItem from="1529741082204" duration="3308000" />
+      <workItem from="1529741082204" duration="9412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3308000" />
+    <option name="totallyTimeSpent" value="9412000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="721" y="409" width="1280" height="773" extended-state="0" />
+    <frame x="134" y="23" width="1280" height="773" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32988167" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32988167" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32988167" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
@@ -293,6 +331,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/TraceResultListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com_linjiamin_trace_ATraceRoute.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATraceRoute.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/TraceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -306,17 +361,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/TraceResultListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/NodeInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="1084" column="23" selection-start-line="1084" selection-start-column="23" selection-end-line="1084" selection-end-column="23" />
+          <folding>
+            <element signature="e#44970#44971#0" expanded="true" />
+            <element signature="e#45051#45052#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -329,25 +388,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/ATraceRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="91">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
           <folding>
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
             <element signature="e#827#828#0" expanded="true" />
             <element signature="e#873#874#0" expanded="true" />
             <element signature="e#842#843#0" expanded="true" />
             <element signature="e#881#882#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com_linjiamin_trace_ATraceRoute.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="37" />
         </state>
       </provider>
     </entry>

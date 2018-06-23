@@ -21,12 +21,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -35,8 +35,8 @@
       <file leaf-file-name="traceroute.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traceroute.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="80" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -47,26 +47,26 @@
       <file leaf-file-name="jni.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jni.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="2574">
+              <caret line="1917" column="43" lean-forward="false" selection-start-line="1917" selection-start-column="43" selection-end-line="1917" selection-end-column="43" />
               <folding>
                 <marker date="1529743674000" expanded="false" signature="895:907" ph="..." />
-                <marker date="1529743674000" expanded="false" signature="1199:2176" ph="..." />
+                <marker date="1529743674000" expanded="true" signature="1199:2176" ph="..." />
                 <marker date="1529743674000" expanded="false" signature="4149:4172" ph="..." />
                 <marker date="1529743674000" expanded="false" signature="4339:4362" ph="..." />
-                <marker date="1529743674000" expanded="false" signature="28012:70885" ph="..." />
-                <marker date="1529743674000" expanded="false" signature="71877:72421" ph="..." />
+                <marker date="1529743674000" expanded="true" signature="28012:70885" ph="..." />
+                <marker date="1529743674000" expanded="true" signature="71877:72421" ph="..." />
                 <marker date="1529743674000" expanded="false" signature="73393:73411" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ATraceToute.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ATraceToute.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ATraceToute.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state relative-caret-position="238">
+              <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
               <folding>
                 <element signature="e#49#73#0" expanded="true" />
               </folding>
@@ -77,8 +77,8 @@
       <file leaf-file-name="ATraceRoute.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATraceRoute.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="120">
+              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -87,7 +87,7 @@
       <file leaf-file-name="jni_md.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jni_md.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-108">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -97,10 +97,12 @@
       <file leaf-file-name="traceroute.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traceroute.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            <state relative-caret-position="271">
+              <caret line="20" column="80" lean-forward="false" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
               <folding>
                 <element signature="e#49#67#0" expanded="true" />
+                <element signature="e#331#342#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,11 +110,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Java_com_linjiamin_trace_ATraceRoute_start</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ATraceToute.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/ATraceRoute.h" />
+        <option value="$PROJECT_DIR$/traceroute.c" />
+        <option value="$PROJECT_DIR$/traceroute.h" />
+        <option value="$PROJECT_DIR$/ATraceToute.cpp" />
       </list>
     </option>
   </component>
@@ -122,9 +132,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="131" />
-    <option name="y" value="23" />
+    <option name="x" value="899" />
+    <option name="y" value="266" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
   </component>
@@ -191,6 +202,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5131289a-3b9b-4600-b796-497fa893041e" name="Default" comment="" />
@@ -198,34 +212,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529744348896</updated>
-      <workItem from="1529744350259" duration="826000" />
+      <workItem from="1529744350259" duration="1435000" />
+      <workItem from="1529751892105" duration="7074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="826000" />
+    <option name="totallyTimeSpent" value="8509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="131" y="23" width="1280" height="709" extended-state="0" />
+    <frame x="899" y="266" width="1280" height="709" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -240,43 +256,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jni_md.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jni.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1529743674000" expanded="false" signature="895:907" ph="..." />
-            <marker date="1529743674000" expanded="false" signature="1199:2176" ph="..." />
-            <marker date="1529743674000" expanded="false" signature="4149:4172" ph="..." />
-            <marker date="1529743674000" expanded="false" signature="4339:4362" ph="..." />
-            <marker date="1529743674000" expanded="false" signature="28012:70885" ph="..." />
-            <marker date="1529743674000" expanded="false" signature="71877:72421" ph="..." />
-            <marker date="1529743674000" expanded="false" signature="73393:73411" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -290,12 +274,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traceroute.h">
+    <entry file="file://$PROJECT_DIR$/jni.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#49#67#0" expanded="true" />
+            <marker date="1529743674000" expanded="false" signature="895:907" ph="..." />
+            <marker date="1529743674000" expanded="true" signature="1199:2176" ph="..." />
+            <marker date="1529743674000" expanded="false" signature="4149:4172" ph="..." />
+            <marker date="1529743674000" expanded="false" signature="4339:4362" ph="..." />
+            <marker date="1529743674000" expanded="true" signature="28012:70885" ph="..." />
+            <marker date="1529743674000" expanded="true" signature="71877:72421" ph="..." />
+            <marker date="1529743674000" expanded="false" signature="73393:73411" ph="..." />
           </folding>
         </state>
       </provider>
@@ -312,17 +302,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ATraceRoute.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jni_md.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traceroute.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding>
+            <element signature="e#49#67#0" expanded="true" />
+            <element signature="e#331#342#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library.cpp" />
+    <entry file="file://$PROJECT_DIR$/library.h" />
+    <entry file="file://$PROJECT_DIR$/jni.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="1917" column="43" lean-forward="false" selection-start-line="1917" selection-start-column="43" selection-end-line="1917" selection-end-column="43" />
+          <folding>
+            <marker date="1529743674000" expanded="false" signature="895:907" ph="..." />
+            <marker date="1529743674000" expanded="true" signature="1199:2176" ph="..." />
+            <marker date="1529743674000" expanded="false" signature="4149:4172" ph="..." />
+            <marker date="1529743674000" expanded="false" signature="4339:4362" ph="..." />
+            <marker date="1529743674000" expanded="true" signature="28012:70885" ph="..." />
+            <marker date="1529743674000" expanded="true" signature="71877:72421" ph="..." />
+            <marker date="1529743674000" expanded="false" signature="73393:73411" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jni_md.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATraceRoute.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traceroute.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traceroute.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="20" column="80" lean-forward="false" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+          <folding>
+            <element signature="e#49#67#0" expanded="true" />
+            <element signature="e#331#342#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATraceToute.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="e#49#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

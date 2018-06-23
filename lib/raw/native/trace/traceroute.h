@@ -14,5 +14,13 @@
 #include <netinet/ip.h>
 #include <netinet/ip_icmp.h>
 #include <netinet/udp.h>
-
+#ifdef __cplusplus
+extern "C"{
 #endif
+
+void start(void (*nodeInfoRecv)(char *dest, char *curAddres, int ttl, int time));
+#ifdef __cplusplus
+}
+#endif
+#endif
+

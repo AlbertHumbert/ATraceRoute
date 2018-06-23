@@ -1,5 +1,8 @@
 package com.linjiamin.trace;
 
+import java.io.File;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.WeakHashMap;
 
 
@@ -40,14 +43,17 @@ public class ATraceRoute {
 
     private ATraceRoute() {
         mListeners = new WeakHashMap<>();
+        try {
+            URI uri = getClass().getResource("/libtrace.dylib").toURI();
+            System.load(new File(uri).getAbsolutePath());
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
         init();
-    }
-
-    static {
-
-        System.loadLibrary("lib" + LibResolver.getOsType().getLibType());
+        stop();
 
     }
+
 
     public void register(String dest, TraceResultListener listener) {
         mListeners.put(dest, listener);
@@ -57,14 +63,17 @@ public class ATraceRoute {
         mListeners.remove(desc);
     }
 
-    public void onNodeTraced(String dest, int ttl, String curAddress, int time) {
+    public void onNodeTraced(String dest, String curAddress, int ttl, int time) {
+        System.out.println(dest + " " + curAddress + " " + ttl + " " + time);
         TraceResultListener listener = mListeners.get(dest);
         if (listener != null) {
             listener.onNewNodeTraced(new NodeInfo(ttl, time, curAddress));
         }
     }
 
+
     public void onTraceFinish(String dest) {
+        System.out.println(dest);
         TraceResultListener listener = mListeners.get(dest);
         if (listener != null) {
             listener.onFinish();
