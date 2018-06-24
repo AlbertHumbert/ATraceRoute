@@ -150,6 +150,33 @@ ATraceToute.cpp.s:
 	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.cpp.s
 .PHONY : ATraceToute.cpp.s
 
+main.o: main.c.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/main.c.s
+.PHONY : main.c.s
+
 traceroute.o: traceroute.c.o
 
 .PHONY : traceroute.o
@@ -189,6 +216,9 @@ help:
 	@echo "... ATraceToute.o"
 	@echo "... ATraceToute.i"
 	@echo "... ATraceToute.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... traceroute.o"
 	@echo "... traceroute.i"
 	@echo "... traceroute.s"

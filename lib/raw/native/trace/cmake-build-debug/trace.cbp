@@ -94,6 +94,12 @@
 		<Unit filename="/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/jni_md.h">
 			<Option target="trace"/>
 		</Unit>
+		<Unit filename="/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/main.c">
+			<Option target="trace"/>
+		</Unit>
+		<Unit filename="/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/trace_def.h">
+			<Option target="trace"/>
+		</Unit>
 		<Unit filename="/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.c">
 			<Option target="trace"/>
 		</Unit>

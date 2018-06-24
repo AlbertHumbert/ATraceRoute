@@ -6,11 +6,12 @@ import java.net.URISyntaxException;
 import java.util.WeakHashMap;
 
 
-//todo 当前只支持唯一任务，和设置ttl，之后添加-q，再考虑能够同时执行多个
+//todo 当前只支持唯一任务，和设置ttl，之后添加-q
 public class ATraceRoute {
 
+    //fixme 必须使用sudo权限执行，打包成jar之后不知道能否使用
     public static void main(String args[]) {
-        ATraceRoute.getInstance().register(args[0], new TraceResultListener() {
+        ATraceRoute.getInstance().register("www.baidu.com", new TraceResultListener() {
             @Override
             public void onNewNodeTraced(NodeInfo nodeInfo) {
                 System.out.println(nodeInfo);
@@ -22,7 +23,7 @@ public class ATraceRoute {
             }
         });
 
-        ATraceRoute.getInstance().start(args[0], 16);
+        ATraceRoute.getInstance().start("www.baidu.com", 3);
     }
 
 
@@ -64,6 +65,7 @@ public class ATraceRoute {
     }
 
     public void onNodeTraced(String dest, String curAddress, int ttl, int time) {
+        System.out.println("onNodeTraced");
         System.out.println(dest + " " + curAddress + " " + ttl + " " + time);
         TraceResultListener listener = mListeners.get(dest);
         if (listener != null) {

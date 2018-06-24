@@ -6,11 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.c
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/main.c
 traceroute.h
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.h
+
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/trace_def.h
 stdio.h
 -
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+signal.h
+-
+errno.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+netinet/ip.h
+-
+netinet/ip_icmp.h
+-
+netinet/udp.h
+-
+
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.c
+sys/time.h
+-
+traceroute.h
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.h
+trace_def.h
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/trace_def.h
 
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.h
 stdio.h
