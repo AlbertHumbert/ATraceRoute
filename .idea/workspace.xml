@@ -6,19 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/raw/linux/jni.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/raw/linux/jni_md.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/raw/linux/makelib.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/raw/osx/jni.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/raw/osx/jni_md.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/raw/java/ATraceRoute/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/raw/java/ATraceRoute/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/raw/linux/makeso.sh" beforeDir="false" afterPath="$PROJECT_DIR$/lib/raw/osx/makelib.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/raw/native/trace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/raw/native/trace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/raw/native/trace/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/raw/osx/makedylib.sh" beforeDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -142,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/lib/raw/osx/makelib.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-column="104" />
+              <caret column="78" selection-start-column="78" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -181,15 +169,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-133">
               <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainTheme.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/view/MainTheme.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -323,26 +302,6 @@
             <path>
               <item name="TraceRoute" type="b2602c69:ProjectViewProjectNode" />
               <item name="TraceRoute" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="raw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TraceRoute" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TraceRoute" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="raw" type="462c0819:PsiDirectoryNode" />
-              <item name="linux" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TraceRoute" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TraceRoute" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="raw" type="462c0819:PsiDirectoryNode" />
-              <item name="osx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TraceRoute" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TraceRoute" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,13 +309,6 @@
               <item name="TraceRoute" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="trace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TraceRoute" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TraceRoute" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="trace" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TraceRoute" type="b2602c69:ProjectViewProjectNode" />
@@ -552,12 +504,12 @@
       <workItem from="1529741198192" duration="3398000" />
       <workItem from="1529752123775" duration="5602000" />
       <workItem from="1529823743205" duration="615000" />
-      <workItem from="1529828306102" duration="40409000" />
+      <workItem from="1529828306102" duration="40713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68957000" />
+    <option name="totallyTimeSpent" value="69261000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,7 +521,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="62" width="1280" height="773" extended-state="0" />
+    <frame x="187" y="23" width="1280" height="773" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32988167" />
@@ -582,10 +534,10 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32988167" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32840237" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3387574" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3387574" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5704698" visible="true" weight="0.21405493" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5704698" visible="true" weight="0.21405493" />
       <window_info anchor="right" id="Database" order="3" weight="0.32956383" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32840237" />
       <window_info id="Structure" order="1" sideWeight="0.4295302" side_tool="true" visible="true" weight="0.21405493" />
@@ -626,13 +578,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/view/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linjiamin/trace/view/TableRow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1032,10 +977,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/raw/java/makejar.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/raw/osx/makelib.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-column="104" />
+          <caret column="78" selection-start-column="78" selection-end-column="78" />
         </state>
       </provider>
     </entry>
