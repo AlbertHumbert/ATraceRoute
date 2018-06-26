@@ -123,59 +123,32 @@ trace/fast:
 	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/build
 .PHONY : trace/fast
 
-ATraceToute.o: ATraceToute.cpp.o
+ATraceToute.o: ATraceToute.c.o
 
 .PHONY : ATraceToute.o
 
 # target to build an object file
-ATraceToute.cpp.o:
-	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.cpp.o
-.PHONY : ATraceToute.cpp.o
+ATraceToute.c.o:
+	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.c.o
+.PHONY : ATraceToute.c.o
 
-ATraceToute.i: ATraceToute.cpp.i
+ATraceToute.i: ATraceToute.c.i
 
 .PHONY : ATraceToute.i
 
 # target to preprocess a source file
-ATraceToute.cpp.i:
-	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.cpp.i
-.PHONY : ATraceToute.cpp.i
+ATraceToute.c.i:
+	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.c.i
+.PHONY : ATraceToute.c.i
 
-ATraceToute.s: ATraceToute.cpp.s
+ATraceToute.s: ATraceToute.c.s
 
 .PHONY : ATraceToute.s
 
 # target to generate assembly for a file
-ATraceToute.cpp.s:
-	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.cpp.s
-.PHONY : ATraceToute.cpp.s
-
-main.o: main.c.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/main.c.s
-.PHONY : main.c.s
+ATraceToute.c.s:
+	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.c.s
+.PHONY : ATraceToute.c.s
 
 traceroute.o: traceroute.c.o
 
@@ -216,9 +189,6 @@ help:
 	@echo "... ATraceToute.o"
 	@echo "... ATraceToute.i"
 	@echo "... ATraceToute.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... traceroute.o"
 	@echo "... traceroute.i"
 	@echo "... traceroute.s"

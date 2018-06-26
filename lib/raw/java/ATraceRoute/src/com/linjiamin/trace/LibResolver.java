@@ -3,10 +3,10 @@ package com.linjiamin.trace;
 public class LibResolver {
 
     public enum OSType {
-        WIN("Windows", "dll"),
-        LINUX("Linux", "so"),
-        OSX("OSX", "dylib"),
-        UNKNOWN("Unknown", "?");
+        WIN("Windows", ".dll"),
+        LINUX("Linux", ".so"),
+        OSX("OSX", ".dylib"),
+        UNKNOWN("Unknown", ".?");
 
         String desc;
         String libType;

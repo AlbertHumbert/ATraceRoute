@@ -9,7 +9,25 @@ import java.util.WeakHashMap;
 //todo 当前只支持唯一任务，和设置ttl，之后添加-q
 public class ATraceRoute {
 
-    //fixme 必须使用sudo权限执行，打包成jar之后不知道能否使用
+    public static void main(String args[]) {
+  /*      ATraceRoute.getInstance().register("www.baidu.com", new TraceResultListener() {
+            @Override
+            public void onNewNodeTraced(NodeInfo nodeInfo) {
+                System.out.println(nodeInfo);
+            }
+
+            @Override
+            public void onFinish() {
+                System.out.println("finish");
+            }
+        });
+
+        ATraceRoute.getInstance().start("www.baidu.com", 3);*/
+    }
+
+/*
+
+    //todo 提供给jni层测试待移除
     public static void main(String args[]) {
         ATraceRoute.getInstance().register("www.baidu.com", new TraceResultListener() {
             @Override
@@ -25,10 +43,12 @@ public class ATraceRoute {
 
         ATraceRoute.getInstance().start("www.baidu.com", 3);
     }
+*/
 
 
     private static ATraceRoute INSTANCE;
     private WeakHashMap<String, TraceResultListener> mListeners;
+
 
     public static ATraceRoute getInstance() {
         if (INSTANCE == null) {
@@ -44,17 +64,12 @@ public class ATraceRoute {
 
     private ATraceRoute() {
         mListeners = new WeakHashMap<>();
-        try {
-            URI uri = getClass().getResource("/libtrace.dylib").toURI();
-            System.load(new File(uri).getAbsolutePath());
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-        init();
-        stop();
-
     }
 
+    public void initEnv(String libPath) {
+        System.load(libPath);
+        init();
+    }
 
     public void register(String dest, TraceResultListener listener) {
         mListeners.put(dest, listener);
@@ -65,8 +80,6 @@ public class ATraceRoute {
     }
 
     public void onNodeTraced(String dest, String curAddress, int ttl, int time) {
-        System.out.println("onNodeTraced");
-        System.out.println(dest + " " + curAddress + " " + ttl + " " + time);
         TraceResultListener listener = mListeners.get(dest);
         if (listener != null) {
             listener.onNewNodeTraced(new NodeInfo(ttl, time, curAddress));

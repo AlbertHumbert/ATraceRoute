@@ -57,9 +57,33 @@ include CMakeFiles/trace.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/trace.dir/flags.make
 
+CMakeFiles/trace.dir/ATraceToute.c.o: CMakeFiles/trace.dir/flags.make
+CMakeFiles/trace.dir/ATraceToute.c.o: ../ATraceToute.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/trace.dir/ATraceToute.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/trace.dir/ATraceToute.c.o   -c /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.c
+
+CMakeFiles/trace.dir/ATraceToute.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/trace.dir/ATraceToute.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.c > CMakeFiles/trace.dir/ATraceToute.c.i
+
+CMakeFiles/trace.dir/ATraceToute.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/trace.dir/ATraceToute.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.c -o CMakeFiles/trace.dir/ATraceToute.c.s
+
+CMakeFiles/trace.dir/ATraceToute.c.o.requires:
+
+.PHONY : CMakeFiles/trace.dir/ATraceToute.c.o.requires
+
+CMakeFiles/trace.dir/ATraceToute.c.o.provides: CMakeFiles/trace.dir/ATraceToute.c.o.requires
+	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.c.o.provides.build
+.PHONY : CMakeFiles/trace.dir/ATraceToute.c.o.provides
+
+CMakeFiles/trace.dir/ATraceToute.c.o.provides.build: CMakeFiles/trace.dir/ATraceToute.c.o
+
+
 CMakeFiles/trace.dir/traceroute.c.o: CMakeFiles/trace.dir/flags.make
 CMakeFiles/trace.dir/traceroute.c.o: ../traceroute.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/trace.dir/traceroute.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/trace.dir/traceroute.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/trace.dir/traceroute.c.o   -c /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.c
 
 CMakeFiles/trace.dir/traceroute.c.i: cmake_force
@@ -81,69 +105,19 @@ CMakeFiles/trace.dir/traceroute.c.o.provides: CMakeFiles/trace.dir/traceroute.c.
 CMakeFiles/trace.dir/traceroute.c.o.provides.build: CMakeFiles/trace.dir/traceroute.c.o
 
 
-CMakeFiles/trace.dir/ATraceToute.cpp.o: CMakeFiles/trace.dir/flags.make
-CMakeFiles/trace.dir/ATraceToute.cpp.o: ../ATraceToute.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/trace.dir/ATraceToute.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trace.dir/ATraceToute.cpp.o -c /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.cpp
-
-CMakeFiles/trace.dir/ATraceToute.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trace.dir/ATraceToute.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.cpp > CMakeFiles/trace.dir/ATraceToute.cpp.i
-
-CMakeFiles/trace.dir/ATraceToute.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trace.dir/ATraceToute.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.cpp -o CMakeFiles/trace.dir/ATraceToute.cpp.s
-
-CMakeFiles/trace.dir/ATraceToute.cpp.o.requires:
-
-.PHONY : CMakeFiles/trace.dir/ATraceToute.cpp.o.requires
-
-CMakeFiles/trace.dir/ATraceToute.cpp.o.provides: CMakeFiles/trace.dir/ATraceToute.cpp.o.requires
-	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/ATraceToute.cpp.o.provides.build
-.PHONY : CMakeFiles/trace.dir/ATraceToute.cpp.o.provides
-
-CMakeFiles/trace.dir/ATraceToute.cpp.o.provides.build: CMakeFiles/trace.dir/ATraceToute.cpp.o
-
-
-CMakeFiles/trace.dir/main.c.o: CMakeFiles/trace.dir/flags.make
-CMakeFiles/trace.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/trace.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/trace.dir/main.c.o   -c /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/main.c
-
-CMakeFiles/trace.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/trace.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/main.c > CMakeFiles/trace.dir/main.c.i
-
-CMakeFiles/trace.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/trace.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/main.c -o CMakeFiles/trace.dir/main.c.s
-
-CMakeFiles/trace.dir/main.c.o.requires:
-
-.PHONY : CMakeFiles/trace.dir/main.c.o.requires
-
-CMakeFiles/trace.dir/main.c.o.provides: CMakeFiles/trace.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/trace.dir/build.make CMakeFiles/trace.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/trace.dir/main.c.o.provides
-
-CMakeFiles/trace.dir/main.c.o.provides.build: CMakeFiles/trace.dir/main.c.o
-
-
 # Object files for target trace
 trace_OBJECTS = \
-"CMakeFiles/trace.dir/traceroute.c.o" \
-"CMakeFiles/trace.dir/ATraceToute.cpp.o" \
-"CMakeFiles/trace.dir/main.c.o"
+"CMakeFiles/trace.dir/ATraceToute.c.o" \
+"CMakeFiles/trace.dir/traceroute.c.o"
 
 # External object files for target trace
 trace_EXTERNAL_OBJECTS =
 
+/Users/alberthumbert/Desktop/TraceRoute/lib/out/libtrace.dylib: CMakeFiles/trace.dir/ATraceToute.c.o
 /Users/alberthumbert/Desktop/TraceRoute/lib/out/libtrace.dylib: CMakeFiles/trace.dir/traceroute.c.o
-/Users/alberthumbert/Desktop/TraceRoute/lib/out/libtrace.dylib: CMakeFiles/trace.dir/ATraceToute.cpp.o
-/Users/alberthumbert/Desktop/TraceRoute/lib/out/libtrace.dylib: CMakeFiles/trace.dir/main.c.o
 /Users/alberthumbert/Desktop/TraceRoute/lib/out/libtrace.dylib: CMakeFiles/trace.dir/build.make
 /Users/alberthumbert/Desktop/TraceRoute/lib/out/libtrace.dylib: CMakeFiles/trace.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /Users/alberthumbert/Desktop/TraceRoute/lib/out/libtrace.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library /Users/alberthumbert/Desktop/TraceRoute/lib/out/libtrace.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trace.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,9 +125,8 @@ CMakeFiles/trace.dir/build: /Users/alberthumbert/Desktop/TraceRoute/lib/out/libt
 
 .PHONY : CMakeFiles/trace.dir/build
 
+CMakeFiles/trace.dir/requires: CMakeFiles/trace.dir/ATraceToute.c.o.requires
 CMakeFiles/trace.dir/requires: CMakeFiles/trace.dir/traceroute.c.o.requires
-CMakeFiles/trace.dir/requires: CMakeFiles/trace.dir/ATraceToute.cpp.o.requires
-CMakeFiles/trace.dir/requires: CMakeFiles/trace.dir/main.c.o.requires
 
 .PHONY : CMakeFiles/trace.dir/requires
 

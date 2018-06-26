@@ -1,25 +1,16 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "C"
-  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/main.c" "/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles/trace.dir/main.c.o"
+  "/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.c" "/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles/trace.dir/ATraceToute.c.o"
   "/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.c" "/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles/trace.dir/traceroute.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  )
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.cpp" "/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/cmake-build-debug/CMakeFiles/trace.dir/ATraceToute.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # Targets to which this target links.

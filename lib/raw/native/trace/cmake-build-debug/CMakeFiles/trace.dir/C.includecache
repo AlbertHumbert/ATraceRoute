@@ -6,43 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/main.c
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceRoute.h
+jni.h
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/jni.h
+
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceToute.c
+ATraceRoute.h
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/ATraceRoute.h
 traceroute.h
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.h
 
-/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/trace_def.h
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/jni.h
 stdio.h
 -
-stdlib.h
+stdarg.h
 -
-string.h
--
-unistd.h
--
-signal.h
--
-errno.h
--
-sys/socket.h
--
-arpa/inet.h
--
-netdb.h
--
-netinet/ip.h
--
-netinet/ip_icmp.h
--
-netinet/udp.h
--
+jni_md.h
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/jni_md.h
+
+/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/jni_md.h
 
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.c
 sys/time.h
 -
 traceroute.h
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.h
-trace_def.h
-/Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/trace_def.h
 
 /Users/alberthumbert/Desktop/TraceRoute/lib/raw/native/trace/traceroute.h
 stdio.h
