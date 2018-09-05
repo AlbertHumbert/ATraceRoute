@@ -1,8 +1,6 @@
 package com.linjiamin.trace;
 
-import java.io.File;
-import java.net.URI;
-import java.net.URISyntaxException;
+
 import java.util.WeakHashMap;
 
 
@@ -10,41 +8,7 @@ import java.util.WeakHashMap;
 public class ATraceRoute {
 
     public static void main(String args[]) {
-  /*      ATraceRoute.getInstance().register("www.baidu.com", new TraceResultListener() {
-            @Override
-            public void onNewNodeTraced(NodeInfo nodeInfo) {
-                System.out.println(nodeInfo);
-            }
-
-            @Override
-            public void onFinish() {
-                System.out.println("finish");
-            }
-        });
-
-        ATraceRoute.getInstance().start("www.baidu.com", 3);*/
     }
-
-/*
-
-    //todo 提供给jni层测试待移除
-    public static void main(String args[]) {
-        ATraceRoute.getInstance().register("www.baidu.com", new TraceResultListener() {
-            @Override
-            public void onNewNodeTraced(NodeInfo nodeInfo) {
-                System.out.println(nodeInfo);
-            }
-
-            @Override
-            public void onFinish() {
-                System.out.println("finish");
-            }
-        });
-
-        ATraceRoute.getInstance().start("www.baidu.com", 3);
-    }
-*/
-
 
     private static ATraceRoute INSTANCE;
     private WeakHashMap<String, TraceResultListener> mListeners;

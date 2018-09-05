@@ -4,11 +4,11 @@ import java.util.List;
 
 public class NiLUtil {
 
-    public boolean isNIL(List l) {
+    public static boolean isNIL(List l) {
         return l == null || l.isEmpty();
     }
 
-    public boolean isNIL(String s) {
+    public static boolean isNIL(String s) {
         return s == null || s.trim().isEmpty();
     }
 }

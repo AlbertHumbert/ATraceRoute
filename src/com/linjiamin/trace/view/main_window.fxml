@@ -11,7 +11,7 @@
 <VBox maxHeight="-Infinity"
       fx:controller="com.linjiamin.trace.view.MainController"
       stylesheets="MainTheme.css"
-      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0"
+      maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0"
       xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
 
     <GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml">
@@ -36,12 +36,12 @@
 
 
     <TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-               minWidth="-Infinity" prefHeight="380.0" prefWidth="420.0" xmlns:fx="http://javafx.com/fxml"
+               minWidth="-Infinity" prefHeight="380.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml"
                fx:id="tbNode">
         <columns>
-            <TableColumn prefWidth="137.0" text="ttl" fx:id="colTTl"/>
-            <TableColumn prefWidth="143.0" text="地址" fx:id="colAddress"/>
-            <TableColumn prefWidth="137.0" text="时间" fx:id="colTime"/>
+            <TableColumn prefWidth="213.0" text="ttl" fx:id="colTTl"/>
+            <TableColumn prefWidth="213.0" text="地址(ip)" fx:id="colAddress"/>
+            <TableColumn prefWidth="213.0" text="时间(ms)" fx:id="colTime"/>
 
         </columns>
     </TableView>

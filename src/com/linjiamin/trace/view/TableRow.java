@@ -1,6 +1,7 @@
 package com.linjiamin.trace.view;
 
 import com.linjiamin.trace.NodeInfo;
+import com.linjiamin.trace.util.TimeUtil;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -12,7 +13,7 @@ public class TableRow {
 
     public TableRow(NodeInfo nodeInfo) {
         ttl = new SimpleStringProperty(nodeInfo.getTtl() + "");
-        timeMilli = new SimpleStringProperty(nodeInfo.getTimeMili() == -1 ? "*" : nodeInfo.getTimeMili() + "");
+        timeMilli = new SimpleStringProperty(nodeInfo.getTimeMili() <= 0 ? "*" : TimeUtil.microsec2millsec(nodeInfo.getTimeMili()));
         address = new SimpleStringProperty(nodeInfo.getAddress() == null ? "*" : nodeInfo.getAddress());
 
     }

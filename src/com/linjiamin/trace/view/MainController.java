@@ -5,6 +5,7 @@ import com.linjiamin.trace.LibResolver;
 import com.linjiamin.trace.NodeInfo;
 import com.linjiamin.trace.TraceResultListener;
 import com.linjiamin.trace.util.PathUtil;
+import com.linjiamin.trace.util.TimeUtil;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,6 +14,7 @@ import javafx.scene.control.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public class MainController implements TraceResultListener {
@@ -41,21 +43,23 @@ public class MainController implements TraceResultListener {
     private List<NodeInfo> nodeInfos = new ArrayList<>();
     private ObservableList<TableRow> rows = FXCollections.observableArrayList();
 
+
     static {
         String libType = LibResolver.getOsType().getLibType();
         String libPath = PathUtil.getProjectPath() + "/libtrace" + libType;
-        System.out.println(libPath);
         ATraceRoute.getInstance().initEnv(libPath);
     }
 
     @FXML
     private void onStartClick() {
-
         if (!initTable) {
             resumeTable(rows);
+            initTable = true;
+        } else {
+            rows.clear();
+            refreshTable();
         }
         ATraceRoute.getInstance().register(tfHostName.getText(), this);
-
         //new Thread(this::beginTrace).start();
         beginTrace();
     }
@@ -68,30 +72,31 @@ public class MainController implements TraceResultListener {
         }
     }
 
-    @FXML
-    private void onClearClick() {
-        tfMaxTTL.clear();
-        tfHostName.clear();
-        nodeInfos.clear();
-        rows.clear();
-        refreshTable();
-    }
-
     @Override
     public void onNewNodeTraced(NodeInfo newNode) {
         Platform.runLater(() -> {
             try {
 
-                nodeInfos.add(newNode);
-                rows.add(new TableRow(newNode));
+                AtomicBoolean isPresent = new AtomicBoolean(false);
+                rows.stream()
+                        .filter(rows -> rows.getTtl().equals(String.valueOf(newNode.getTtl())))
+                        .findAny()
+                        .ifPresent(rows -> {
+                            isPresent.set(true);
+                            if (rows.addressProperty().getValue() == null) {
+                                rows.addressProperty().setValue(rows.getAddress());
+                            }
 
-                if (newNode.getAddress() == null) {
-                    nodeInfos.stream()
-                            .filter(nodeInfo -> nodeInfo.getTtl() == newNode.getTtl() && nodeInfo.getAddress() != null)
-                            .findAny()
-                            .ifPresent(preNode -> newNode.setAddress(preNode.getAddress()));
+                            String preTime = rows.timeMilliProperty().getValue();
+                            String newTime = preTime + (newNode.getTimeMili() == -1 ? "  *" : "  " + TimeUtil.microsec2millsec(newNode.getTimeMili()));
+                            rows.timeMilliProperty().setValue(newTime);
 
+                        });
+
+                if (!isPresent.get()) {
+                    rows.add(new TableRow(newNode));
                 }
+
                 refreshTable();
             } catch (Exception e) {
                 showAlertWindow("网络错误", "请检查输入和网络状态");
@@ -99,9 +104,23 @@ public class MainController implements TraceResultListener {
         });
     }
 
+
+    @FXML
+    private void onClearClick() {
+        tfMaxTTL.clear();
+        tfHostName.clear();
+        nodeInfos.clear();
+        rows.clear();
+        refreshTable();
+        btnStart.setText("开始");
+    }
+
     @Override
     public void onFinish() {
-        showAlertWindow("请求完成", "共经过" + nodeInfos.size() + "个节点");
+        //showAlertWindow("请求完成", "共经过" + rows.size() + "个节点");
+
+        Platform.runLater(() -> btnStart.setText("重试"));
+
     }
 
     private void refreshTable() {

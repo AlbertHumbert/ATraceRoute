@@ -19,7 +19,7 @@ public class MainWindow extends Application {
 
     private void initWindow(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("main_window.fxml"));
-        Scene scene = new Scene(root, 420, 500);
+        Scene scene = new Scene(root, 640, 500);
         scene.getStylesheets().setAll(getClass().getResource("MainTheme.css").toExternalForm());
         primaryStage.setTitle("TraceRoute");
         primaryStage.setScene(scene);

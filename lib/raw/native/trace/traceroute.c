@@ -4,35 +4,41 @@
 #include "traceroute.h"
 
 
-
-
 struct trace_options trace_options;
 
 struct sockaddr_in dest_addr;
- char *dest_host_name;
+char *dest_host_name;
 
 char send_buf[BUFSIZE], recv_buf[BUFSIZE];
 struct hostent *hostent;
+
+//in_addr 32位无符号整形表示的ip地址
 in_addr_t saddr;
 
 static int alarm_flag;
-void start( char *host, int max_ttl, int wait_time,
-            void (*node_info_recv)( char *dest, char *cur_address, int ttl, int time,  char *msg)) {
+
+char *get_dest_host() {
+    return dest_host_name;
+}
+
+void start(char *host, int max_ttl, int wait_time,
+           void (*node_info_recv)(char *dest, char *cur_address, int ttl, int time, char *msg)) {
 
 
-    /* 设置默认选项 */
     trace_options.m_max_ttl = max_ttl;
     trace_options.q_queries = DFLOPT_NQUERIES;
     trace_options.w_wait_time = wait_time;
 
-    dest_host_name = "www.baidu.com";
+
+    dest_host_name = host;
     printf("trace %s", host);
 
-    /* 处理用户输入，并构建一个目的端套接字地址结构 */
     if ((saddr = inet_addr(dest_host_name)) == INADDR_NONE) {
         if ((hostent = gethostbyname(dest_host_name)) == NULL) {
-            fprintf(stderr, "unknow host %s \n", dest_host_name);
-            exit(EXIT_ERR);
+            //printf("unknown host %s \n", host);
+            node_info_recv(dest_host_name, NULL, 0, 0, "unknown host ");
+            return;
+
         }
         memmove(&saddr, hostent->h_addr, hostent->h_length);
     }
@@ -117,7 +123,6 @@ uint16_t check_sum(uint16_t *addr, int len) {
 }
 
 
-
 void handle_alrm(int sign) {
     printf("\ttime-out");
     fflush(stdout);
@@ -126,18 +131,18 @@ void handle_alrm(int sign) {
 }
 
 
-void trace_icmp(void (*node_info_recv)( char *dest, char *curAddres, int ttl, int time,  char *errMsg)) {
+void trace_icmp(void (*node_info_recv)(char *dest, char *curAddres, int ttl, int time, char *errMsg)) {
     int sockfd;
     struct sockaddr addr, lastaddr;
     socklen_t addrlen;
 
-    double rtt;
+    int rtt;
+    int has_name_info;
     int icmpdatalen, seq, ttl, query, code, ndone;
     struct timeval tvsend, tvrecv;
     struct icmp *icmp;
     size_t len;
 
-    /* 建立一个基于ICMP的套接字用于发送和接收ICMP消息 */
     if ((sockfd = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP)) < 0) {
         perror("scoket error");
         exit(EXIT_ERR);
@@ -150,15 +155,16 @@ void trace_icmp(void (*node_info_recv)( char *dest, char *curAddres, int ttl, in
            inet_ntoa(dest_addr.sin_addr),
            trace_options.m_max_ttl);
 
+    has_name_info = FALSE;
     icmpdatalen = 56;
     seq = 0;
     ndone = 0;
 
     //外部用信号经常没办法停下recvfrom函数，设一个秒级别的超时可以解决
     //todo 也就是说只设这个超时就能解决了？
-    struct timeval begin, current;
+    struct timeval begin;
     begin.tv_sec = 0;
-    begin.tv_usec = 10000;  // (= 1 ms)
+    begin.tv_usec = 10000;
     setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO, &begin, sizeof(begin));
 
     for (ttl = 1; ttl <= trace_options.m_max_ttl && ndone == 0; ttl++) {
@@ -191,7 +197,6 @@ void trace_icmp(void (*node_info_recv)( char *dest, char *curAddres, int ttl, in
                 exit(EXIT_ERR);
             }
 
-            /* 处理回应结果 */
             code = trace_recv_icmp(sockfd, seq, &tvrecv, &addr, &addrlen);
             if (code == TRACE_RESULT_TIMEOUT) {
                 printf("\t*");
@@ -205,10 +210,11 @@ void trace_icmp(void (*node_info_recv)( char *dest, char *curAddres, int ttl, in
                         printf("\t%s (%s)",
                                str,
                                sock_2_host(&addr, addrlen));
-
+                       has_name_info = TRUE;
                     } else {
                         printf("\t%s",
                                sock_2_host(&addr, addrlen));
+                        has_name_info = FALSE;
                     }
 
                     memcpy(&lastaddr, &addr, addrlen);
@@ -220,14 +226,20 @@ void trace_icmp(void (*node_info_recv)( char *dest, char *curAddres, int ttl, in
                 }
                 tvrecv.tv_sec -= tvsend.tv_sec;
 
-                rtt = tvrecv.tv_sec * 1000.0 + tvrecv.tv_usec / 1000.0;
+                rtt = tvrecv.tv_usec;
 
-                printf("\t%.3f ms", rtt);
+                printf("\t%.3f ms", rtt / 1000.0);
 
+                char *msg = (ttl == trace_options.m_max_ttl && query == trace_options.q_queries - 1) ? "finish" : NULL;
                 if (strlen(str) == 0) {
-                    node_info_recv(dest_host_name, NULL, ttl, (int) rtt, NULL);
+                    node_info_recv(dest_host_name, NULL, ttl, rtt, msg);
                 } else {
-                    node_info_recv(dest_host_name, str, ttl, (int) rtt, NULL);
+                    if (has_name_info) {
+                        strcat(str, "(");
+                        strcat(str, sock_2_host(&addr, addrlen));
+                        strcat(str, ")");
+                    }
+                    node_info_recv(dest_host_name, str, ttl, rtt, msg);
                 }
 
                 if (code == TRACE_RESULT_UNREACH)
@@ -275,7 +287,6 @@ int trace_recv_icmp(int sockfd, int seq, struct timeval *tv, struct sockaddr *ad
         }
 
 
-        /* 处理接收到的数据 */
         ip1 = (struct ip *) recv_buf;
         ip_header_length1 = ip1->ip_hl << 2;
 

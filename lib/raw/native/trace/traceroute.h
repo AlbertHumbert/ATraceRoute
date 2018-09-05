@@ -64,6 +64,7 @@ int trace_recv_icmp(int sockfd, int seq, struct timeval *tv, struct sockaddr *ad
 
 uint16_t check_sum(uint16_t *addr, int len);
 
+char * get_dest_host();
 
 char *sock_2_host(const struct sockaddr *addr, socklen_t addr_len);
 
